@@ -1,21 +1,13 @@
 class Student
 
 {
-
   String firstName,lastName,line1, line2, city, state,eMail,contactNo;
-
   Address addr;
-
   int pinCode,daydob, monthdob, yeardob;
-
   Date dob;
-
   String[] skills;
-
   Qualification[] qual;
-
   Project[] projects;
-
   int k;
 
 
@@ -25,21 +17,13 @@ class Student
   {
 
   this.firstName = firstName;
-
   this.lastName = lastName;
-
   this.addr = new Address(line1, line2, city, state, pinCode);
-
   this.dob = new Date(daydob, monthdob, yeardob);
-
   this.skills = new String[s];
-
   this.qual = new Qualification[q];
-
   this.projects = new Project[p];
-
   this.eMail = eMail;
-
   this.contactNo = contactNo;
 
   }
@@ -49,9 +33,7 @@ class Student
   {
 
   this.daydob = daydob;
-
   this.monthdob = monthdob;
-
   this.yeardob = yeardob;
 
   }
@@ -61,7 +43,6 @@ class Student
   {
 
   dob.setDate(daydob, monthdob, yeardob);
-
   return dob.displayDate();
 
   }
@@ -71,13 +52,9 @@ class Student
   {
 
   this.line1 = line1;
-
   this.line2 = line2;
-
   this.city = city;
-
   this.state = state;
-
   this.pinCode = pinCode;
 
   }
@@ -145,19 +122,12 @@ class Student
   {
 
   int i;
-
   System.out.println("\nStudent Name: " + firstName + " " + lastName);
-
   System.out.println("Date of birth: " + dob.displayDate());
-
   System.out.println("Email: " + eMail);
-
   System.out.println("Contact Number: " + contactNo);   
-
   System.out.println("Address ");
-
   System.out.println(addr.displayAddress());
-
   System.out.println("Skills: ");
 
   for(i= 0; i< s; i++)

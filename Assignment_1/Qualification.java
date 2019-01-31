@@ -1,15 +1,9 @@
 class Qualification
 
 {
-
-
-
 	String qualName;
-
 	String university;
-
 	String institute;
-
 	float cgpa;
 
   Qualification(String qualName, String university, String institute, float cgpa)
@@ -17,12 +11,9 @@ class Qualification
     { 
 
         this.qualName = qualName;
-
         this.university = university;
-
         this.institute = institute;
-
-  		this.cgpa = cgpa;
+        this.cgpa = cgpa;
 
   	}
 
